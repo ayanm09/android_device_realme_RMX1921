@@ -8,8 +8,6 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/bliss/config/common.mk)
 
-#Official Build
-BLISS_BUILDTYPE=OFFICIAL
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
