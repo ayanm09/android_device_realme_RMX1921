@@ -10,6 +10,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 $(call inherit-product, vendor/bliss/config/common.mk)
 
+#Vanilla Build
+BLISS_BUILD_VARIANT=vanilla
+
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -30,5 +33,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
         PRIVATE_BUILD_DESC="coral-user 11 RQ1A.201205.008 6943376 release-keys" \
         PRODUCT_NAME="RMX1921" \
 	TARGET_DEVICE="RMX1921"
-    
+
 
